@@ -22,7 +22,7 @@ class Motor {
   protected:
     void set_speed(uint16_t);
     uint8_t pwm_pin, dir_pin;
-    bool inverse;
+    bool inv;
 };
 
 Motor::Motor(uint8_t pwm, uint8_t direction) {
@@ -32,7 +32,7 @@ Motor::Motor(uint8_t pwm, uint8_t direction) {
 Motor::Motor(uint8_t pwm, uint8_t direction, bool inverse) {
   pwm_pin = pwm;
   dir_pin = direction;
-  inverse = inverse;
+  inv = inverse;
   pinMode(pwm_pin, OUTPUT);
   pinMode(dir_pin, OUTPUT);
   this->stop();
@@ -43,12 +43,12 @@ void Motor::set_speed(uint16_t speed) {
 }
 
 void Motor::forward(uint16_t speed) {
-  digitalWrite(dir_pin, inverse ? HIGH : LOW);
+  digitalWrite(dir_pin, inv ? HIGH : LOW);
   this->set_speed(speed);
 }
 
 void Motor::reverse(uint16_t speed) {
-  digitalWrite(dir_pin, inverse ? LOW : HIGH);
+  digitalWrite(dir_pin, inv ? LOW : HIGH);
   this->set_speed(speed);
 }
 
@@ -56,12 +56,12 @@ void Motor::stop() {
   this->set_speed(0);
 }
 
-Motor left(MOTOR_L_PWM, MOTOR_L_DIR, 0);
-Motor right(MOTOR_L_PWM, MOTOR_L_DIR, 1);
+Motor left(MOTOR_L_PWM, MOTOR_L_DIR, false);
+Motor right(MOTOR_R_PWM, MOTOR_R_DIR, true);
 
 void setup() {
   Serial.begin(115200);
-  
+
   pinMode(IR1, INPUT);
   pinMode(IR2, INPUT);
 }
@@ -70,18 +70,24 @@ void loop() {
   ir1 = analogRead(IR1);
   ir2 = analogRead(IR2);
 
-  Serial.print("IR1: ");
-  Serial.print(ir1);
-  Serial.print(", IR2: ");
-  Serial.println(ir2);
-
   if ((ir1 < 500) && (ir2 < 500)) {
-    left.forward(1023);
-    right.forward(1023);
+    // both sensors are on white
+    left.forward(SPEED_MAX);
+    right.forward(SPEED_MAX);
+    
+  } else if (ir1 < 500) {
+    // left sensor is on white, right is on the line
+    left.reverse(SPEED_MAX/1.3);
+    right.forward(SPEED_MAX);
+    
+  } else if (ir2 < 500) {
+    // right sensor is on white, left is on the line
+    left.forward(SPEED_MAX);
+    right.reverse(SPEED_MAX/1.3);
+    
   } else {
+    // both sensors are on black, stop
     left.stop();
     right.stop();
   }
-
-  delay(100);
 }
