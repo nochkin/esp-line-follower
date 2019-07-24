@@ -10,8 +10,6 @@
 
 #define SPEED_MAX 1023
 
-int ir1, ir2;
-
 class Motor {
   public:
     Motor(uint8_t, uint8_t);
@@ -67,8 +65,8 @@ void setup() {
 }
 
 void loop() {
-  ir1 = analogRead(IR1);
-  ir2 = analogRead(IR2);
+  uint16_t ir1 = analogRead(IR1);
+  uint16_t ir2 = analogRead(IR2);
 
   if ((ir1 < 500) && (ir2 < 500)) {
     // both sensors are on white
