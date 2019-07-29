@@ -75,13 +75,13 @@ void loop() {
     
   } else if (ir1 < 500) {
     // left sensor is on white, right is on the line
-    left.reverse(SPEED_MAX/1.3);
-    right.forward(SPEED_MAX);
+    left.forward(SPEED_MAX);
+    right.reverse(SPEED_MAX/1.3);
     
   } else if (ir2 < 500) {
     // right sensor is on white, left is on the line
-    left.forward(SPEED_MAX);
-    right.reverse(SPEED_MAX/1.3);
+    left.reverse(SPEED_MAX/1.3);
+    right.forward(SPEED_MAX);
     
   } else {
     // both sensors are on black, stop
