@@ -29,10 +29,10 @@ All prices are approximate and depend on the source where you purchase it. My re
 
 Qnty | Part | Cost | Buy
 -- | - | - | -
-1 | ESP8266 NodeMCU (CP2102) | $5.00
-1 | L293DD Motor Shield for ESP8266 NodeMCU | $2.50
-2 | Infrared sensors | $1.50
-1 | 2WD Robot Chassis | $8.00
+1 | ESP8266 NodeMCU (CP2102) | $5.00 | [Amazon](https://www.amazon.com/ESP8266-microcontroller-NodeMCU-WiFi-CP2102/dp/B071WRD25D/ref=sr_1_1?keywords=B071WRD25D&qid=1568748259&s=gateway&sr=8-1)
+1 | L293DD Motor Shield for ESP8266 NodeMCU | $2.50 | [Amazon](https://www.amazon.com/BeediY-NodeMCU-ESP-12E-ESP8266-Control/dp/B07QVCMM5B/ref=sr_1_1?keywords=B07QVCMM5B&qid=1568748516&s=gateway&sr=8-1)
+2 | Infrared sensors | $1.50 | [Amazon](https://www.amazon.com/HiLetgo-Infrared-Avoidance-Reflective-Photoelectric/dp/B07W97H2WS/ref=sr_1_1?keywords=B07W97H2WS&qid=1568748581&s=gateway&sr=8-1)
+1 | 2WD Robot Chassis | $8.00 | [Amazon](https://www.amazon.com/SainSmart-Smart-Chassis-Tracing-Encoder/dp/B072N7QNV9/ref=sr_1_1?keywords=B072N7QNV9&qid=1568748118&s=gateway&sr=8-1)
 1 | Various holders/screws | $2.00
 
 **Total**: about $20
