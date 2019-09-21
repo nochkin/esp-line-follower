@@ -33,7 +33,7 @@ Qnty | Part | Cost | Buy
 1 | L293DD Motor Shield for ESP8266 NodeMCU | $2.50 | [eBay](https://www.ebay.com/itm/123883947048), [AliExpress](https://www.aliexpress.com/item/32870926299.html), [Amazon](https://www.amazon.com/BeediY-NodeMCU-ESP-12E-ESP8266-Control/dp/B07QVCMM5B/ref=sr_1_1?keywords=B07QVCMM5B&qid=1568748516&s=gateway&sr=8-1)
 2 | Infrared sensors | $1.50 | [eBay](https://www.ebay.com/itm/132461910910), [AliExpress](https://www.aliexpress.com/item/4000028730932.html), [Amazon](https://www.amazon.com/HiLetgo-Infrared-Avoidance-Reflective-Photoelectric/dp/B07W97H2WS/ref=sr_1_1?keywords=B07W97H2WS&qid=1568748581&s=gateway&sr=8-1)
 1 | 2WD Robot Chassis | $8.00 | [eBay](https://www.ebay.com/itm/263825340577), [AliExpress](https://www.aliexpress.com/item/32766175672.html), [Amazon](https://www.amazon.com/SainSmart-Smart-Chassis-Tracing-Encoder/dp/B072N7QNV9/ref=sr_1_1?keywords=B072N7QNV9&qid=1568748118&s=gateway&sr=8-1)
-1 | Various holders/screws | $2.00
+1 | Various M3 spacers/standoffs/screws | $2.00 | [eBay](https://www.ebay.com/itm/253323075671), [AliExpress](https://www.aliexpress.com/item/32799855557.html), [Amazon](https://www.amazon.com/Yosoo-120pcs-standoff-motherboard-assortment/dp/B01GO2GWWW/ref=sr_1_1?keywords=B01GO2GWWW&qid=1569029665&sr=8-1)
 
 **Total**: about $20
 
