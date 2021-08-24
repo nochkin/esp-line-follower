@@ -1,0 +1,18 @@
+IR Left:
+	14
+
+IR Right:
+	12
+
+L293DD DIR Left:
+    0
+
+L293DD PWM Left:
+    5
+
+L293DD DIR Right:
+    2
+
+L293DD PWM Right:
+    4
+
