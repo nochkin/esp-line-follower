@@ -10,6 +10,10 @@
 
 #define SPEED_MAX 1023
 
+#ifdef ARDUINO_ARCH_ESP32
+#include "analogWrite.h"
+#endif
+
 class Motor {
   public:
     Motor(uint8_t, uint8_t);
