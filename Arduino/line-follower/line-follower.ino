@@ -155,6 +155,13 @@ void setup() {
 
   pinMode(IR1, INPUT);
   pinMode(IR2, INPUT);
+
+  delay(1000);
+
+#ifdef MOTORS_ENABLE
+  pinMode(MOTORS_ENABLE, OUTPUT);
+  digitalWrite(MOTORS_ENABLE, HIGH);
+#endif
 }
 
 void loop() {
