@@ -34,7 +34,7 @@
 #define MOTOR_R_PWM 4 // D2
 #define MOTOR_R_DIR 2 // D4
 #else
-#error "Selected motor driver not supported on ESP32"
+#error "Selected motor driver not supported on ESP8266"
 #endif
 
 #define SPEED_MAX 1023
