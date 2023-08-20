@@ -162,6 +162,8 @@ void setup() {
 
   delay(1000);
 
+  Serial.println("Started");
+
 #ifdef MOTORS_ENABLE
   pinMode(MOTORS_ENABLE, OUTPUT);
   digitalWrite(MOTORS_ENABLE, HIGH);
